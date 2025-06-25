@@ -12,7 +12,11 @@ textArea.addEventListener('input', function(){
     if (charLength >= maxChar){
         msgArea.style.color = 'red';
         msgArea.textContent = "You've reached the character limit!";
+        textArea.style.border = "2px solid red";
+        textArea.style.backgroundColor = 'pink';
     } else {
         msgArea.textContent = '';
+        textArea.style.border = '';
+        textArea.style.backgroundColor = '';
     }
 })
